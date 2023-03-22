@@ -9,15 +9,13 @@ import Prescripciones from "./pages/Prescripciones";
 function App() {
   return (
     <Router>
-      <div>
-        <Navbar />
-        <Routes>
-          <Route path="/Atenciones" element={<Atenciones />} />
-          <Route path="/Derivaciones" element={<Derivaciones />} />
-          <Route path="/Examenes" element={<Examenes />} />
-          <Route path="/Prescripciones" element={<Prescripciones />} />
-        </Routes>
-      </div>
+      <Navbar />
+      <Routes>
+        <Route path="/Atenciones" element={<Atenciones />} />
+        <Route path="/Derivaciones" element={<Derivaciones />} />
+        <Route path="/Examenes" element={<Examenes />} />
+        <Route path="/Prescripciones" element={<Prescripciones />} />
+      </Routes>
     </Router>
   );
 }

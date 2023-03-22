@@ -11,6 +11,10 @@ const Derivaciones = () => {
       }}
     >
       <h1>Derivaciones</h1>
+      <h1>Derivaciones</h1>
+      <h1>Derivaciones</h1>
+      <h1>Derivaciones</h1>
+      <h1>Derivaciones</h1>
     </div>
   );
 };
