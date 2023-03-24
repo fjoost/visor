@@ -58,12 +58,9 @@ const Atenciones = () => {
 
   return (
     <div className="min-h-screen bg-gray-100 py-6 flex flex-col justify-center sm:py-12">
-      <div className="relative py-3 sm:max-w-xl sm:mx-auto">
-        <h2 className="text-center text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
-          Atenciones
-        </h2>
+      <div className="relative py-3 sm:max-w-full">
         <div className="mx-auto">
-          <table className="min-w-full divide-y divide-gray-200">
+          <table className="w-full divide-y divide-gray-200 overflow-x-auto">
             <thead className="bg-gray-50">
               <tr>
                 <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
@@ -110,6 +107,7 @@ const Atenciones = () => {
                     <>
                       <tr
                         className={index % 2 === 0 ? "bg-white" : "bg-gray-50"}
+                        colSpan="5"
                       >
                         <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
                           {atencion.meap ? "Meap" : " "}
